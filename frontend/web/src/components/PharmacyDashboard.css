@@ -1,0 +1,512 @@
+.pharmacy-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-welcome {
+  margin-bottom: 30px;
+}
+
+.dashboard-welcome h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.dashboard-welcome p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.dashboard-grid-pharmacy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-left-pharmacy,
+.dashboard-right-pharmacy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-icon {
+  font-size: 1.2rem;
+}
+
+.view-all-link {
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+/* Pending Prescriptions Section */
+.prescriptions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.prescription-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.prescription-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.prescription-info {
+  flex: 1;
+}
+
+.prescription-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.prescription-medication {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.prescription-action-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  width: fit-content;
+  min-width: fit-content;
+}
+
+.btn-fill {
+  background: #14b8a6;
+  color: white;
+}
+
+.btn-fill:hover {
+  background: #0d9488;
+}
+
+.btn-review {
+  background: #86efac;
+  color: #166534;
+}
+
+.btn-review:hover {
+  background: #6ee7b7;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  margin-left: 4px;
+}
+
+/* Orders to Prepare Section */
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-number {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.btn-add-order {
+  padding: 8px 16px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  min-width: fit-content;
+}
+
+.btn-add-order:hover {
+  background: #4f46e5;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.order-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-patient-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.order-type {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.order-details {
+  display: flex;
+  gap: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.order-amount {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.order-id {
+  color: #666;
+}
+
+.order-code {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.order-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.order-time {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.order-tag-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.order-tag {
+  padding: 4px 10px;
+  background: #14b8a6;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.arrow-icon {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* Right Column Cards */
+.attendance-card,
+.inventory-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.attendance-header,
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.attendance-header h3,
+.inventory-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.attendance-icon,
+.inventory-icon {
+  font-size: 1.1rem;
+}
+
+.inventory-quantity {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.attendance-content,
+.inventory-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.attendance-label,
+.inventory-label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.attendance-status {
+  font-size: 0.9rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.inventory-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.btn-sell-usage {
+  padding: 8px 16px;
+  background: #86efac;
+  color: #166534;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+  width: fit-content;
+}
+
+.btn-sell-usage:hover {
+  background: #6ee7b7;
+}
+
+/* Pharmacy Inventory Chart */
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.chart-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chart-title span:first-child {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.filled-count {
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.btn-view-all-dropdown {
+  padding: 6px 12px;
+  background: transparent;
+  color: #6366f1;
+  border: 1px solid #6366f1;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-view-all-dropdown:hover {
+  background: #6366f1;
+  color: white;
+}
+
+.chart-container-pharmacy {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  height: 220px;
+  margin-top: 20px;
+  padding-left: 5px;
+}
+
+.chart-y-axis-pharmacy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 20px;
+  width: 25px;
+}
+
+.chart-bars-pharmacy {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.chart-bar-wrapper-pharmacy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.chart-bar-container-pharmacy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.chart-bar-pharmacy {
+  width: 100%;
+  background: linear-gradient(to top, #14b8a6 0%, #5eead4 100%);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  min-height: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4px;
+  transition: all 0.3s ease;
+}
+
+.chart-bar-pharmacy:hover {
+  opacity: 0.9;
+}
+
+.bar-value {
+  font-size: 0.65rem;
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.chart-x-label {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 6px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .dashboard-grid-pharmacy {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .prescriptions-list,
+  .orders-list {
+    gap: 12px;
+  }
+}
+

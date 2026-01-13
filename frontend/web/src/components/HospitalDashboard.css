@@ -1,0 +1,494 @@
+.hospital-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-welcome {
+  margin-bottom: 30px;
+}
+
+.dashboard-welcome h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.dashboard-welcome p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.dashboard-grid-hospital {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-left-hospital,
+.dashboard-right-hospital {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-icon {
+  font-size: 1.2rem;
+}
+
+.section-icon-red {
+  font-size: 1.2rem;
+  color: #ef4444;
+}
+
+.view-all-link {
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+/* Summary & Stats Section */
+.stats-bar {
+  background: linear-gradient(135deg, #ef4444 0%, #ec4899 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-main {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Quick Cards */
+.quick-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.quick-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.quick-card-icon {
+  width: 32px;
+  height: 32px;
+  background: #6366f1;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.quick-card-icon-envelope {
+  width: 32px;
+  height: 32px;
+  background: #6366f1;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.badge-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #f59e0b;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: 2px solid white;
+}
+
+.quick-card-content {
+  flex: 1;
+}
+
+.quick-card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.quick-card-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.quick-card-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #10b981;
+}
+
+.quick-card-status {
+  font-size: 0.9rem;
+  color: #f59e0b;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* ER Cases Section */
+.er-cases-section {
+  margin-bottom: 20px;
+}
+
+.er-cases-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.er-cases-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.er-cases-count {
+  flex: 1;
+}
+
+.er-cases-count strong {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.er-cases-sub {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.er-cases-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.er-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.er-icon-red {
+  color: #ef4444;
+  font-size: 1.1rem;
+}
+
+.er-icon-yellow {
+  color: #f59e0b;
+  font-size: 1.1rem;
+}
+
+/* Recent Admissions */
+.admissions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admission-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.admission-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.admission-info {
+  flex: 1;
+}
+
+.admission-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.admission-condition {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.admission-date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 2px;
+}
+
+.admission-time {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.admission-condition-repeat {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Right Column - Search and Actions */
+.search-section {
+  margin-bottom: 20px;
+}
+
+.search-bar-hospital {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 2px solid #ef4444;
+  border-radius: 8px;
+  background: white;
+}
+
+.search-calendar-icon {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.search-input-hospital {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.search-input-hospital::placeholder {
+  color: #999;
+}
+
+.search-magnify-icon {
+  font-size: 1.1rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.action-btn:hover {
+  background: #f9fafb;
+  border-color: #6366f1;
+  transform: translateX(2px);
+}
+
+.action-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.action-text {
+  flex: 1;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.arrow-icon {
+  color: #666;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* Bed Occupancy Chart */
+.chart-container-hospital {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  height: 200px;
+  margin-top: 20px;
+  padding-left: 5px;
+}
+
+.chart-y-axis-hospital {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 20px;
+  width: 25px;
+}
+
+.chart-bars-hospital {
+  flex: 1;
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.chart-bar-wrapper-hospital {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.chart-bar-container-hospital {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.chart-bar-hospital {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  min-height: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4px;
+  transition: all 0.3s ease;
+}
+
+.chart-bar-hospital:hover {
+  opacity: 0.9;
+}
+
+.bar-value {
+  font-size: 0.65rem;
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.chart-x-label {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 6px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .dashboard-grid-hospital {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .quick-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
